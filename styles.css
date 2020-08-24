@@ -1,0 +1,167 @@
+/**
+ * TARTALOMJEGYZÉK
+ *
+ * 1. GOMBOK
+ *
+ * 2. FEJLÉC
+ *
+ * 3. NAVIGÁCIÓ
+ *
+ * 4. POSZT
+ *
+ * 5. LÁBLÉC
+ */
+
+
+/*=================GOMBOK=====================*/
+
+.button{
+  display: inline-block;
+  width: 92.5%;
+  text-align: center;
+  padding-top: 1.125rem;
+  padding-bottom: 1.125rem;
+  border: 1px solid #6200EA;
+  border-radius: 1.5rem;
+  background-color: #FFFFFF;
+  margin-top: 2.7%;
+  margin-left: 3.75%;
+}
+
+.button:hover{
+  display: inline-block;
+  transform: scale(0.9);
+}
+
+
+/*================INPUT BOX (SEARCH)==========*/
+
+.input_icons{
+  position: relative;
+  display: inline-block;
+  width: 92.5%;
+  margin-top: 2.7%;
+  margin-bottom: 2.7%;
+  margin-left: 3.75%;
+  margin-right: 3.75%;
+  background-color: blueviolet;
+}
+
+.input_icons i{
+  display: inline-block;
+  position: absolute;
+  float: right;
+  top: .9375rem;
+  right: .9375rem;
+  bottom: .9375rem;
+  opacity: 25%;
+}
+
+.input_field{
+  position: absolute;
+  display: inline-block;
+  width: 100%;
+  padding-top: 1rem;
+  padding-left: 1.5rem;
+  padding-bottom: 1rem;
+  background-color: #F4F3F5;
+  opacity: 100%;
+  border-style: none;
+}
+
+
+
+input:focus{
+  outline-style: none;
+  border-bottom: 1px solid #6200EA;
+  border-bottom-width: medium;
+  opacity: 100%;
+}
+
+/*=====================USERS=====================*/
+
+/*img{
+  position: absolute;
+  width: 62.5%;
+  height: 100%;
+  margin-left: 18.75%;
+  border-radius: 50%;
+  object-fit: cover;
+}*/
+
+.name{
+  position: relative;
+}
+
+.chat_short_text{
+  position: absolute;
+  display: inline-block;
+  width: calc(95.3125%);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.pic{
+  position: absolute;
+  width: 62.5%;
+  height: 100%;
+  margin-left: 18.75%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.pic_40{
+  width: 50%;
+  height: 50%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/*=============CHAT PLATFORM==========*/
+
+.message_time{
+  color: #B2ACBA;
+  font-size: .75rem;
+  text-transform: uppercase;
+  letter-spacing: .15rem;
+  font-weight: bold;
+  margin-left: 5.5%;
+}
+
+.message_time_margin{
+  margin-right: 5.5%;
+}
+
+.chat_box{
+  background-color: #FFFFFF;
+  border-radius: 0 .9375rem .9375rem .9375rem;
+  padding: 1.25rem;
+  font-size: .875rem;
+  color: #211138;
+  max-width: 62.5%;
+  max-height: auto;
+}
+
+.inverze{
+  background-color: #B2ACBA;
+  color: #FFFFFF;
+}
+
+.message_pic{
+  width: 83%;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.message_pic_2{
+  width: 5%;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.margin_left{
+  margin-right: 5.5%;
+}
