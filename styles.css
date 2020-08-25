@@ -96,7 +96,7 @@ input:focus{
 .chat_short_text{
   position: absolute;
   display: inline-block;
-  width: calc(95.3125%);
+  width: calc(80.3125%);
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;

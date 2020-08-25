@@ -1,0 +1,176 @@
+/**
+TABLE OF CONTENTS - CONSTRUCTION OF LEFT COLUMN
+
+USERS..............size of the left column
+USER_BOX...........size of the 7 rows in the left column
+INPUT..............size and layout of the search input box
+USER_BOX_LAYOUT....this set up contains the layout of the profile picture, the name and the short text
+BUTTON.............size and layout of the"Add New Contact" button
+*/
+
+.Users{
+  width: 25%;
+  height: 100%;
+  float: left;
+  border-bottom: 1px solid #F4F3F5;
+}
+
+.user_box{
+  width: 100%;
+  height: 9%;
+  border-bottom: 1px solid #F4F3F5;
+  background-color: #FFFFFF;
+  display: table;
+}
+
+/*SET UP OF THE INPUT BOX*/
+
+/*Set up of the width and margins of the input box and the position have to be relative, because the icon and the 'search' text relate to this div*/
+
+.input_icons{
+  position: relative;
+  display: inline-block;
+  width: 92.5%;
+  margin-top: 2.7%;
+  margin-bottom: 2.7%;
+  margin-left: 3.75%;
+  margin-right: 3.75%;
+  /*background-color: blueviolet;*/
+}
+
+/*layout of the icon*/
+
+.input_icons i{
+  display: inline-block;
+  position: absolute;
+  float: right;
+  top: .9375rem;
+  right: .9375rem;
+  bottom: .9375rem;
+  opacity: 25%;
+}
+
+/*layout of the input box, it has no height, we have to use padding*/
+
+.input_field{
+  position: absolute;
+  display: inline-block;
+  width: 100%;
+  padding-top: 1rem;
+  padding-left: 1.5rem;
+  padding-bottom: 1rem;
+  background-color: #F4F3F5;
+  opacity: 100%;
+  border-style: none;
+}
+
+/*set up of the text as 'Search'*/
+
+input::placeholder{
+  opacity: 25%;
+  font-size: .875rem;
+  font-weight: bold;
+}
+
+/*it happens, when we click on the input box*/
+
+input:focus{
+  outline-style: none;
+  border-bottom: 1px solid #6200EA;
+  border-bottom-width: medium;
+  opacity: 100%;
+}
+
+/*THESE CSS CONTAIN THE LAYOUT OF THE PROFILE PICTURE, THE NAME OF THE USER AND THE SHORT TEXT IN A ROW*/
+
+/*this set up aligns the elements horizontally and vertically center in the div*/
+
+.user_box_layout{
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.profile_picture{
+  display: inline-block;
+  position: relative;
+  width: 20%;
+  height: 62.5%;
+  float: left;
+}
+
+.pic{
+  position: absolute;
+  width: 62.5%;
+  height: 100%;
+  margin-left: 18.75%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.name{
+  width: 80%;
+  height: 62.5%;
+  float: right;
+  position: relative;
+}
+
+/*.name{
+  position: relative;
+}*/
+
+/*set up of the user name as anchor*/
+
+a.chat_name{
+ display: block;
+  font-size: .75rem;
+  color: #6200EA;
+  font-weight: bold;
+  letter-spacing: .15rem;
+  text-transform: uppercase;
+  margin-bottom: .3125rem;
+}
+
+/*text-overflow, white-space and overflow set up together*/
+
+.chat_short_text{
+  position: absolute;
+  display: inline-block;
+  width: calc(95.3125%);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+a.chat_short_text{
+  font-size: .875rem;
+  font-weight: normal;
+  color: #211138;
+}
+
+/*ADD NEW CONTACT BUTTON*/
+
+.button{
+  display: inline-block;
+  width: 92.5%;
+  text-align: center;
+  padding-top: 1.125rem;
+  padding-bottom: 1.125rem;
+  border: 1px solid #6200EA;
+  border-radius: 1.5rem;
+  background-color: #FFFFFF;
+  margin-top: 2.7%;
+  margin-left: 3.75%;
+}
+
+a.btn{
+  letter-spacing: .15rem;
+  font-weight: bold;
+  font-size: .75rem;
+  color: #6200EA;
+  text-transform: uppercase;
+}
+
+.button:hover{
+  display: inline-block;
+  transform: scale(0.9);
+}

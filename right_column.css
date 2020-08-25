@@ -1,0 +1,187 @@
+/**
+TABLE OF CONTENTS - CONSTRUCTION OF LEFT COLUMN
+
+CHAT_ROOM.............size of the right column
+1. CHAT_ROOM_HEADER......size of the header of the right column
+2. CHAT_PLATFORM.........size of the middle part of right column
+3. MESSAGE_BOX...........size of the third part of the right column
+
+
+*/
+
+.chat_room{
+  width: 75%;
+  height: 100%;
+  float: right;
+  /*background-color: aqua;*/
+}
+
+/*1.*/
+
+.chat_room_header{
+  width: 100%;
+  height: 9%;
+  background-color: #6200EA;
+}
+
+/*this set up aligns the elements horizontally and vertically center in the div*/
+
+.wrapper{
+  width: 93%;
+  height: 100%;
+  float: left;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+/*Amy Adams*/
+
+.margin_and_font_set_up{
+  margin-left: 2.6875%;
+  font-size: 1.25rem;
+  color: #FFFFFF;
+}
+
+/*Logo text*/
+
+.logo{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*Student picture*/
+
+.student_picture{
+  width: 7%;
+  height: 100%;
+  float: right;
+}
+
+.pic_40{
+  width: 50%;
+  height: 50%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/*2.*/
+
+.chat_platform{
+  width: 100%;
+  height: 75.5%;
+  background-color: #F4F3F5;
+}
+
+/*size of the div without padding*/
+
+.frame{
+  width: 90%;
+  height: 84.8%;
+  margin-top: 5.6%;
+  margin-bottom: 9.6%;
+  overflow-y: scroll;
+}
+
+/*left side - Amy*/
+.message_time{
+  color: #B2ACBA;
+  font-size: .75rem;
+  text-transform: uppercase;
+  letter-spacing: .15rem;
+  font-weight: bold;
+  margin-left: 5.5%;
+}
+
+/*right side*/
+
+.message_time_margin{
+  margin-right: 5.5%;
+}
+
+/*set up when picture and textbox are together */
+
+.position::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.picture_size{
+  width: 5.5%;
+  height: auto;
+}
+
+.message_pic{
+  width: 83%;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.chat_box{
+  background-color: #FFFFFF;
+  border-radius: 0 .9375rem .9375rem .9375rem;
+  padding: 1.25rem;
+  font-size: .875rem;
+  color: #211138;
+  max-width: 62.5%;
+  max-height: auto;
+}
+
+.chat_box_position{
+  left: 5.5%;
+  float: left;
+}
+
+/*set up when only textbox is without picture - left side (Amy's message)*/
+
+.chat_box_margin{
+  margin-left: 5.5%;
+}
+
+/*set up when picture and textbox are together - right side*/
+
+.user_position{
+  position: relative;
+}
+
+.chat_box_position_right{
+  margin-right: 5.5%;
+  float: right;
+}
+
+.inverze{
+  background-color: #B2ACBA;
+  color: #FFFFFF;
+}
+
+.margin_left{
+  margin-right: 5.5%;
+}
+
+.message_pic_2{
+  width: 5%;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.picture_right{
+  margin-left: 16.6%;
+}
+
+.user_avatar_self{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin-right: 0;
+}
+
+/*3.*/
+
+.message_box{
+  width: 100%;
+  height: 15.5%;
+  background-color: #FFFFFF;
+}
